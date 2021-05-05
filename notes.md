@@ -17,3 +17,4 @@ Used Packages/Components:
   - **@expo/vector-icons**: _Use most common icons on expo, equivalent to react-icons package for React._
   - **expo-font**: _Use customized fonts on expo._
   - **@expo-google-fonts/[font]**: _Use a specific font from google fonts. package e.g.: @expo-google-fonts/inter_
+  - **expo-app-loading**: _The splash screen as a component_
