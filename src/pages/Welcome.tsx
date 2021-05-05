@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {
   Text,
   View,
@@ -15,12 +15,6 @@ import { Button } from '../components/Button';
 import colors from '../styles/colors';
 
 export function Welcome() {
-  const [visible, setVisible] = useState(false);
-
-  function handleVisibility() {
-    setVisible(true);
-  }
-
   return (
     <SafeAreaView style={styles.container}>
       <Text style={styles.title}>
@@ -28,7 +22,7 @@ export function Welcome() {
         suas plantas {'\n'}
         de forma fácil
       </Text>
-      {visible && <Image source={wateringImg} style={styles.image} />}
+      <Image source={wateringImg} style={styles.image} />
       <Text style={styles.subtitle}>
         Não esqueça mais de regrar sua plantas. Nós cuidamos de lembrar você
         sempre que precisar.
