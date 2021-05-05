@@ -9,26 +9,22 @@ import {
   StatusBar,
   Dimensions,
 } from 'react-native';
-import { Feather } from '@expo/vector-icons'
+import { Feather } from '@expo/vector-icons';
 
 import wateringImg from '../assets/watering.png';
 import colors from '../styles/colors';
+import fonts from '../styles/fonts';
 
 export function Welcome() {
   return (
     <SafeAreaView style={styles.container}>
-
       <Text style={styles.title}>
         Gerencie {'\n'}
-        suas plantas {'\n'}
-        de forma fácil
+        suas plantas de {'\n'}
+        forma fácil
       </Text>
 
-      <Image
-        source={wateringImg}
-        style={styles.image}
-        resizeMode="contain"
-      />
+      <Image source={wateringImg} style={styles.image} resizeMode='contain' />
 
       <Text style={styles.subtitle}>
         Não esqueça mais de regrar sua plantas. Nós cuidamos de lembrar você
@@ -36,14 +32,8 @@ export function Welcome() {
       </Text>
 
       <TouchableOpacity style={styles.button} activeOpacity={0.7}>
-        <Text>
-          <Feather
-            name="chevron-right"
-            style={styles.buttonIcon}
-          />
-        </Text>
+        <Feather name='chevron-right' style={styles.buttonIcon} />
       </TouchableOpacity>
-
     </SafeAreaView>
   );
 }
@@ -56,17 +46,20 @@ const styles = StyleSheet.create({
     paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0,
   },
   title: {
-    fontSize: 32,
-    fontWeight: 'bold',
+    fontSize: 28,
+    // fontWeight: 'bold',
     textAlign: 'center',
     color: colors.heading,
-    marginTop: 38
+    marginTop: 38,
+    fontFamily: fonts.heading,
+    lineHeight: 34,
   },
   subtitle: {
     textAlign: 'center',
     fontSize: 18,
     paddingHorizontal: 20,
     color: colors.heading,
+    fontFamily: fonts.text,
   },
   image: {
     height: Dimensions.get('window').width * 0.7,
