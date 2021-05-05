@@ -5,7 +5,7 @@ To install a package with expo just type:
 ```
 $ expo install [package]
 ```
-Used Packages/Components:
+## Used Packages/Components
 
 - **react-native** (doesn't need installation)
   - **SafeAreaView**: _A view, but contain all the content in visible area of the phone. (just works on Iphone)_
@@ -18,3 +18,13 @@ Used Packages/Components:
   - **expo-font**: _Use customized fonts on expo._
   - **@expo-google-fonts/[font]**: _Use a specific font from google fonts. package e.g.: @expo-google-fonts/inter_
   - **expo-app-loading**: _The splash screen as a component_
+
+# Javascript/Typescript
+
+## If/Else
+
+The `if` conditional accepts a block without `{}`, like:
+```typescript
+if (condition)
+  return "Hello Word"
+```
