@@ -7,6 +7,7 @@ import {
   Platform,
   StatusBar,
 } from 'react-native';
+import { useNavigation } from '@react-navigation/core';
 
 import { Button } from '../components/Button';
 
@@ -27,7 +28,7 @@ export function Confirmation() {
         </Text>
 
         <View style={styles.footer}>
-          <Button />
+          <Button title='Começar' />
         </View>
       </View>
     </SafeAreaView>
