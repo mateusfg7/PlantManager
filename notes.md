@@ -12,6 +12,7 @@ $ expo install [package]
   - **Platform**: _Get information about the running device._
   - **StatusBar**: _Get information and dimensions about the status bar of the phone._
   - **Dimensions**: _Get dimensions of the phone._
+  - **KeyboardAvoidingView**: _A view that modify the elements position when the keyboard is open._
 
 - **expo**
   - **@expo/vector-icons**: _Use most common icons on expo, equivalent to react-icons package for React._
