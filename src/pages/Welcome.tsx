@@ -7,6 +7,7 @@ import {
   SafeAreaView,
   Platform,
   StatusBar,
+  Dimensions,
 } from 'react-native';
 
 import wateringImg from '../assets/watering.png';
@@ -22,7 +23,11 @@ export function Welcome() {
         de forma fácil
       </Text>
 
-      <Image source={wateringImg} style={styles.image} />
+      <Image
+        source={wateringImg}
+        style={styles.image}
+        resizeMode="contain"
+      />
 
       <Text style={styles.subtitle}>
         Não esqueça mais de regrar sua plantas. Nós cuidamos de lembrar você
@@ -58,8 +63,7 @@ const styles = StyleSheet.create({
     color: colors.heading,
   },
   image: {
-    width: 292,
-    height: 284,
+    height: Dimensions.get('window').width * 0.7,
   },
   button: {
     backgroundColor: colors.green,
