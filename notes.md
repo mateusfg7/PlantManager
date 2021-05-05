@@ -28,4 +28,6 @@ The `if` conditional accepts a block without `{}`, like:
 ```typescript
 if (condition)
   return "Hello Word"
+
+if (condition) return "Hello Word"
 ```
