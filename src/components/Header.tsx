@@ -6,7 +6,7 @@ import userImg from '../assets/mateus.png';
 import colors from '../styles/colors';
 import fonts from '../styles/fonts';
 
-export function Header() {
+export default function Header() {
   return (
     <View style={styles.container}>
       <View>
