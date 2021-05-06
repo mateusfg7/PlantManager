@@ -13,6 +13,7 @@ $ expo install [package]
   - **StatusBar**: _Get information and dimensions about the status bar of the phone._
   - **Dimensions**: _Get dimensions of the phone._
   - **KeyboardAvoidingView**: _A view that modify the elements position when the keyboard is open._
+  - **react-native-iphone-x-helper** (need installation): _Misc help methods for Iphone X_
 
 - **expo**
   - **@expo/vector-icons**: _Use most common icons on expo, equivalent to react-icons package for React._
