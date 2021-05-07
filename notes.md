@@ -21,6 +21,7 @@ $ expo install [package]
   - **expo-font**: _Use customized fonts on expo._
   - **@expo-google-fonts/[font]**: _Use a specific font from google fonts. package e.g.: @expo-google-fonts/inter_
   - **expo-app-loading**: _The splash screen as a component_
+  - **lottie-react-native**: _Use animation on expo/react-native_
 
 # Javascript/Typescript
 
