@@ -16,7 +16,6 @@ import { Load } from '../components/Load';
 
 import colors from '../styles/colors';
 import fonts from '../styles/fonts';
-import { color } from 'react-native-reanimated';
 
 interface EnvironmentProps {
   key: string;
@@ -45,7 +44,7 @@ export function PlantSelect() {
 
   const [page, setPage] = useState(1);
   const [loadingMore, setLoadingMore] = useState(false);
-  const [loadedAll, setLoadedAll] = useState(false);
+  // const [loadedAll, setLoadedAll] = useState(false);
 
   function handleEnvironmentSelected(environment: string) {
     setEnvironmentSelected(environment);
