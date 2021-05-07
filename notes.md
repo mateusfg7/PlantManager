@@ -15,6 +15,7 @@ $ expo install [package]
   - **KeyboardAvoidingView**: _A view that modify the elements position when the keyboard is open._
   - **FlatList**: _Component to create a list of items, something like `map()` of Javascript._
   - **react-native-iphone-x-helper** (need installation): _Misc help methods for Iphone X_
+  - **ActivityIndicator**: _Component to show load circle_
 
 - **expo**
   - **@expo/vector-icons**: _Use most common icons on expo, equivalent to react-icons package for React._
