@@ -5,7 +5,6 @@ import { Welcome } from '../pages/Welcome';
 import { UserIdentification } from '../pages/UserIdentification';
 import { Confirmation } from '../pages/Confirmation';
 import { PlantSave } from '../pages/PlantSave';
-import { MyPlants } from '../pages/MyPlants';
 
 import AuthRoutes from './tab.routes';
 
@@ -30,7 +29,7 @@ const AppRoutes: React.FC = () => (
     <stackRoutes.Screen name='Confirmation' component={Confirmation} />
     <stackRoutes.Screen name='PlantSelect' component={AuthRoutes} />
     <stackRoutes.Screen name='PlantSave' component={PlantSave} />
-    <stackRoutes.Screen name='MyPlants' component={MyPlants} />
+    <stackRoutes.Screen name='MyPlants' component={AuthRoutes} />
   </stackRoutes.Navigator>
 );
 
