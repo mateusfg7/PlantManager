@@ -14,9 +14,7 @@ $ expo install [package]
   - **Dimensions**: _Get dimensions of the phone._
   - **KeyboardAvoidingView**: _A view that modify the elements position when the keyboard is open._
   - **FlatList**: _Component to create a list of items, something like `map()` of Javascript._
-  - **react-native-iphone-x-helper** (need installation): _Misc help methods for Iphone X_
   - **ActivityIndicator**: _Component to show load circle_
-  - **RectButton** from **react-native-gesture-handler** (need installation): _Button component with native press style._
 
 - **expo**
   - **@expo/vector-icons**: _Use most common icons on expo, equivalent to react-icons package for React._
@@ -24,6 +22,11 @@ $ expo install [package]
   - **@expo-google-fonts/[font]**: _Use a specific font from google fonts. package e.g.: @expo-google-fonts/inter_
   - **expo-app-loading**: _The splash screen as a component_
   - **lottie-react-native**: _Use animation on expo/react-native_
+
+- **misc**:
+  - **RectButton** from **react-native-gesture-handler**: _Button component with native press style. Types: **RectButtonProps**._
+  - **react-native-iphone-x-helper**: _Misc help methods for Iphone X_
+
 
 # Javascript/Typescript
 
