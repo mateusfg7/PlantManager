@@ -9,6 +9,12 @@ npm-debug.*
 *.orig.*
 web-build/
 
+# lock files
+*.lock
+
+# log files
+*.log
+
 # macOS
 .DS_Store
 
