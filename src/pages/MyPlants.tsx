@@ -2,9 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { StyleSheet, View, Text, Image, FlatList, Alert } from 'react-native';
 import { formatDistance } from 'date-fns';
 import { ptBR } from 'date-fns/locale';
-import AsyncStorage from '@react-native-async-storage/async-storage';
 
-import { loadPlant, PlantProps, StoragePlantProps } from '../libs/storage';
+import { loadPlant, PlantProps, removePlant } from '../libs/storage';
 
 import Header from '../components/Header';
 import { PlantCardSecondary } from '../components/PlantCardSecondary';
@@ -29,15 +28,7 @@ export function MyPlants() {
         text: 'Sim 😢',
         onPress: async () => {
           try {
-            const data = await AsyncStorage.getItem('@plantmanager:plants');
-            const plants = data ? (JSON.parse(data) as StoragePlantProps) : {};
-
-            delete plants[plant.id];
-
-            await AsyncStorage.setItem(
-              '@plantmanager:plants',
-              JSON.stringify(plants)
-            );
+            removePlant(plant.id);
 
             setMyPlants((oldData) =>
               oldData.filter((item) => item.id !== plant.id)
