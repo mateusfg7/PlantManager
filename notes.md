@@ -25,6 +25,7 @@ $ expo install [package]
 
 - **misc**:
   - **RectButton** from **react-native-gesture-handler**: _Button component with native press style. Types: **RectButtonProps**._
+  - **Swipeable** from **react-native-gesture-handler/Swipeable**: _A view thats allows swipe it to any side, and render some component behind original component_
   - **react-native-iphone-x-helper**: _Misc help methods for Iphone X_
 
 
