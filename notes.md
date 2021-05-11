@@ -16,6 +16,7 @@ $ expo install [package]
   - **FlatList**: _Component to create a list of items, something like `map()` of Javascript._
   - **react-native-iphone-x-helper** (need installation): _Misc help methods for Iphone X_
   - **ActivityIndicator**: _Component to show load circle_
+  - **RectButton** from **react-native-gesture-handler** (need installation): _Button component with native press style._
 
 - **expo**
   - **@expo/vector-icons**: _Use most common icons on expo, equivalent to react-icons package for React._
